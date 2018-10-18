@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8">
+	<title>HOME</title>
+	<link rel="stylesheet" href="style.css" />
+
+<style>
+
+body {
+	background: -webkit-linear-gradient(#000000, #808080);
+	background: -o-linear-gradient(#000000, #808080); 
+	background: -moz-linear-gradient(#000000, #808080);
+	background: linear-gradient(#000000, #808080);
+	background-color: #000000;
+}
+
+section {
+	display: inline-block;
+}
+
+video {
+    position: absolute;
+    top: 40%;
+    bottom: 100%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+        transition: 2s opacity;
+}
+
+div button {      
+		text-align:center;
+		color: white;
+		font-variant: small-caps;
+        width: 150px;
+        background-color: #808080;
+        padding: 2em;
+        border: 1px solid #000000;
+        border-radius: 1em;
+		border-bottom-color: #808080;
+		border-top-color: #808080;
+		border-right-color: #808080;
+		border-color:#808080;		
+ }
+
+div button:hover {
+ background-color:#CECECE;
+ color: black;
+ border-color:#CECECE;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+	<div id="banner1"><p> CREATIVE AGENCY </p></div>
+
+
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="clients.html">CLIENTS</a></li>
+			<li><a href="aboutus.html">ABOUT US</a></li>
+			<li><a href="contact.html">CONTACT</a></li>	
+		</ul>	
+	</div>
+		
+
+	<div id="banner2"></div>
+	
+
+	<div class="video"> 
+		<video autoplay loop muted preload="auto">
+			<source src="videoindex.mp4" type="video/mp4" />
+			<source src="videoindex.ogg" type="video/ogg" />
+			<source src="videoindex.webm" type="video/webm" />					
+		</video>
+	</div>		
+	
+	<form action="clients.html">
+		<div class="button" style="text-align: center; display: block; margin-left: auto; margin-right: auto; padding-top: 10em; float: inherit;">
+			<button type="submit">KNOW MORE</button>
+		</div>
+	</form>
+
+
+	<div id="footer" style="position: absolute; bottom: 0; left: 0; right: 0">
+		<p> © CreativeAgency - All rights reserved </p>
+	</div>
+
+</body>
+
+</html>
